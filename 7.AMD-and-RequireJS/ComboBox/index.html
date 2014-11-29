@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ComboBox</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="list">
+        <div id="selected"></div>
+    </div>
+    
+    <script id="post-template" type="text/x-handlebars-template">
+            <div class="person-item" id="person-item-{{id}}">
+                <strong class="person-name">{{name}}</strong><p class="person-age">{{age}}</p>
+                <img src="{{avatarUrl}}" width="100" />
+            </div>
+    </script>
+    <script src="scripts/libs/require.js" data-main="scripts/main"></script>
+</body>
+</html>
